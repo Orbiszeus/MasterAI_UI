@@ -160,7 +160,7 @@ export default {
       console.log('Organization Name:', this.organizationName);
       return this.organizationName;
     },
-    sendCountry() {
+    sendCountry() { //TODO take this function out 
       console.log(this.selectedCountry)
       this.countrySelection = false;
       this.selectedCountry = this.selectedCountry.trim();
@@ -170,10 +170,6 @@ export default {
       console.log(file.name)
       this.fileName = this.file.name.trim();
       return this.fileName;
-    },
-    scrollBottom() {
-      const chatbotBody = this.$refs.chatbotBody;
-      chatbotBody.scrollTop = chatbotBody.scrollHeight - chatbotBody.clientHeight;
     },
     async uploadFile() {
       this.isLoading = true;
